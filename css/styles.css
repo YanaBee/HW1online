@@ -1,25 +1,135 @@
+:root {
+  --title-font: "Montserat", sans-serif;
+}
+
 body {
-    font-size: 'Arial', serif;
+  font-size: "Montserat", sans-serif;
 }
 
 h1,
 h2,
 h3,
 p {
-    margin: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
 
+.logo {
+  display: block;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  padding-left: 80px;
+  margin-right: 433px;
+}
 .container {
-    width: 1170px;
+  width: 1170px;
+  margin: 0 auto;
+}
+/* Header section */
+
+.header-section {
+  display: flex;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  margin: 0;
+  justify-item: center;
+}
+
+.menu-list .item:not(:last-child) {
+  display: flex;
+  text-decoration: none;
+}
+
+.item {
+  margin-right: 31px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.gift-finder {
+  font-family: var(--title-font);
+  font-size: 18px;
+  line-height: 1.2;
+  align-items: center;
+  color: #f7941e;
+  text-transform: uppercase;
+  width: 150px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-right: 34px;
+  border: 1px solid #f7941e;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 /* hero */
+.hero-section {
+  display: flex;
+  max-width: 1440px;
+  background-color: #f1f1f2;
+}
+
+.content {
+  padding-left: 162px;
+  padding-top: 154px;
+  padding-bottom: 135px;
+  margin-right: 126px;
+}
 
 .title {
-    font-size: 56px;
-    line-height: 69px;
+  font-size: 56px;
+  font-family: var(--title-font);
+  width: 433px;
+  line-height: 1.2;
+  margin-bottom: 36px;
+  margin-right: 0;
+}
+
+.title-text {
+  font-family: var(--title-font);
+  font-size: 20px;
+  line-height: 1.4;
+  width: 430px;
+  margin-bottom: 52px;
+}
+
+.hero-button {
+  font-family: var(--title-font);
+  width: 200px;
+  height: 43px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #f7941e;
+  border-radius: 5px;
+  padding: 20px 25px;
+  border: none;
+  border-color: #ffffff;
 }

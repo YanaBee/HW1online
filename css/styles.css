@@ -32,8 +32,6 @@ ul {
 
 .logo {
   display: block;
-  padding-top: 38px;
-  padding-bottom: 38px;
   padding-left: 80px;
   margin-right: 433px;
 }
@@ -45,6 +43,8 @@ ul {
 
 .header-section {
   display: flex;
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 
 .page-header {
@@ -53,13 +53,15 @@ ul {
 }
 .menu-list {
   display: flex;
-  padding-top: 47px;
-  padding-bottom: 47px;
   margin: 0;
   justify-item: center;
 }
 
-.menu-list .item:not(:last-child) {
+.menu-list .item {
+  text-decoration: none;
+  display: flex;
+}
+.item:nth-child(4n) {
   display: flex;
   text-decoration: none;
 }
@@ -67,6 +69,7 @@ ul {
 .item {
   margin-right: 31px;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -83,9 +86,12 @@ ul {
   padding-top: 13px;
   padding-bottom: 13px;
   margin-right: 34px;
+  margin-left: 365px;
   border: 1px solid #f7941e;
-  box-sizing: border-box;
   border-radius: 5px;
+  background-color: #ffffff;
+  /* display: flex;
+  justify-content: center; */
 }
 /* hero */
 .hero-section {

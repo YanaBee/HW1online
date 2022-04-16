@@ -43,18 +43,19 @@ ul {
 
 .header-section {
   display: flex;
-  padding-top: 47px;
-  padding-bottom: 47px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .page-header {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
+
 .menu-list {
   display: flex;
-  margin: 0;
-  justify-item: center;
 }
 
 .menu-list .item {
@@ -62,17 +63,18 @@ ul {
   display: flex;
 }
 .item:nth-child(4n) {
-  display: flex;
-  text-decoration: none;
+  margin-right: 0;
 }
 
 .item {
   margin-right: 31px;
 }
 
+.nav-link:hover {
+  color: #f7941e;
+}
 .nav {
   display: flex;
-  align-items: center;
 }
 
 .gift-finder {
@@ -80,18 +82,22 @@ ul {
   font-size: 18px;
   line-height: 1.2;
   align-items: center;
+  justify-content: center;
   color: #f7941e;
   text-transform: uppercase;
   width: 150px;
   padding-top: 13px;
   padding-bottom: 13px;
   margin-right: 34px;
-  margin-left: 365px;
+  margin-left: 300px;
   border: 1px solid #f7941e;
   border-radius: 5px;
   background-color: #ffffff;
-  /* display: flex;
-  justify-content: center; */
+}
+
+.gift-finder:hover {
+  color: #ffffff;
+  background-color: #f7941e;
 }
 /* hero */
 .hero-section {
@@ -127,7 +133,6 @@ ul {
 .hero-button {
   font-family: var(--title-font);
   width: 200px;
-  height: 43px;
   font-size: 18px;
   line-height: 1.4;
   text-align: center;
@@ -139,3 +144,5 @@ ul {
   border: none;
   border-color: #ffffff;
 }
+
+/* How we work */
